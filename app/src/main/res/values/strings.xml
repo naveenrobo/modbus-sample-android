@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ModBusSample</string>
+    <string name="temp">39</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="serial_port">Synchronous Serial Port</string>
+</resources>

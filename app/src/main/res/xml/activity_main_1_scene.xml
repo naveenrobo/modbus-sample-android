@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+        <KeyFrameSet>
+            <KeyAttribute
+                android:translationY="0dp"
+                motion:framePosition="0"
+                motion:motionTarget="@+id/textView" />
+            <KeyAttribute
+                android:translationY="30dp"
+                motion:framePosition="-100"
+                motion:motionTarget="@+id/textView" />
+            <KeyAttribute
+                android:translationY="-100dp"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/textView" />
+        </KeyFrameSet>
+        <OnClick />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start" />
+
+    <ConstraintSet android:id="@+id/end" />
+    <Transition
+        motion:autoTransition="animateToStart"
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/start" />
+</MotionScene>
